@@ -379,6 +379,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
+    @font-face {
+        font-family: "adineue PRO Cyr Bold Web";
+        src: url(/fonts/adineuePROCyr-BoldWeb.ttf?0e04a788b36617680c712a5afe22f033);
+    }
+   @font-face {
+        font-family: "adineue PRO Cyr Light Web";
+        src: url(/fonts/adineuePROCyr-LightWeb.ttf?c2070a5fd274d58d3c3b29e47c52461e);
+    }
 
 *, ::before, ::after {
   --tw-translate-x: 0;
@@ -424,9 +432,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.bottom-1 {
+  bottom: 0.25rem;
+}
+.left-0 {
+  left: 0px;
+}
+.right-0 {
+  right: 0px;
+}
+.z-10 {
+  z-index: 10;
+}
+.m-0 {
+  margin: 0px;
+}
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .mr-20 {
   margin-right: 5rem;
@@ -443,11 +476,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-12 {
   margin-right: 3rem;
 }
+.mr-3 {
+  margin-right: 0.75rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
 }
 .flex {
   display: flex;
@@ -455,14 +500,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
+.h-screen {
+  height: 100vh;
+}
 .h-7 {
   height: 1.75rem;
 }
 .h-12 {
   height: 3rem;
 }
+.h-44 {
+  height: 11rem;
+}
+.h-full {
+  height: 100%;
+}
 .h-24 {
   height: 6rem;
+}
+.h-36 {
+  height: 9rem;
+}
+.h-20 {
+  height: 5rem;
+}
+.min-h-0 {
+  min-height: 0px;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-52 {
   width: 13rem;
@@ -470,14 +539,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-12 {
   width: 3rem;
 }
-.w-1134 {
-  width: 70.87rem;
+.w-full {
+  width: 100%;
 }
-.w-964 {
-  width: 62.93rem;
+.w-3\/4 {
+  width: 75%;
+}
+.w-4\/6 {
+  width: 66.666667%;
 }
 .max-w-custom {
   max-width: 71.87rem;
+}
+.max-w-3xl {
+  max-width: 48rem;
+}
+.max-w-7xl {
+  max-width: 80rem;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.list-none {
+  list-style-type: none;
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -507,6 +594,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   -moz-column-gap: 11rem;
        column-gap: 11rem;
 }
+.gap-y-24 {
+  row-gap: 6rem;
+}
+.gap-y-20 {
+  row-gap: 5rem;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -521,17 +617,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
-.bg-orange-color {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 108 14 / var(--tw-bg-opacity));
-}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-indigo-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+.p-0 {
+  padding: 0px;
 }
 .p-8 {
   padding: 2rem;
@@ -552,8 +663,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .pt-0 {
   padding-top: 0px;
+}
+.text-center {
+  text-align: center;
+}
+.font-adctBold {
+  font-family: 'adineue PRO Cyr Bold Web', 'serif';
+}
+.font-adctLight {
+  font-family: 'adineue PRO Cyr Light Web', 'serif';
 }
 .text-xl {
   font-size: 1.25rem;
@@ -562,6 +686,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xxs {
   font-size: 0.625rem;
   line-height: 1rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -574,9 +706,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-bold {
   font-weight: 700;
 }
-.font-semibold {
-  font-weight: 600;
-}
 .uppercase {
   text-transform: uppercase;
 }
@@ -588,21 +717,50 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(130 176 133 / var(--tw-text-opacity));
 }
-.text-blue-color-2 {
-  --tw-text-opacity: 1;
-  color: rgb(0 72 179 / var(--tw-text-opacity));
-}
 .text-black-color {
   --tw-text-opacity: 1;
   color: rgb(32 33 36 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.opacity-0 {
+  opacity: 0;
+}
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-dialog {
   --tw-shadow: 3px 4px 15px 0 rgba(36, 37, 38, 0.22);
   --tw-shadow-colored: 3px 4px 15px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.shadow-gray-color {
-  --tw-shadow-color: #F9F9F9;
-  --tw-shadow: var(--tw-shadow-colored);
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    transition: opacity 0.6s ease-out;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
+}
+
+.hover\:text-blue-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 

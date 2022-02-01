@@ -6,6 +6,10 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                adctBold: "'adineue PRO Cyr Bold Web', 'serif'",
+                adctLight: "'adineue PRO Cyr Light Web', 'serif'",
+            },
             colors:{
                 'gray-color': '#F9F9F9',
                 'blue-color': '#003AAD',
